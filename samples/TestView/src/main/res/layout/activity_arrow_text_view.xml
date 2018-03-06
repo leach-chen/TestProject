@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context="com.leachchen.testproject.testview.Activity.ArrowTextViewActivity">
+    tools:context=".Activity.ArrowTextViewActivity">
 
-    <com.leachchen.testproject.testview.View.ArrowTextView
+    <com.leachchen.testview.View.ArrowTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000000"

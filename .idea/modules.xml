@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" filepath="$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestGps/TestGps.iml" filepath="$PROJECT_DIR$/samples/TestGps/TestGps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestJni/testjni.iml" filepath="$PROJECT_DIR$/samples/TestJni/testjni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestView/TestView.iml" filepath="$PROJECT_DIR$/samples/TestView/TestView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/samples.iml" filepath="$PROJECT_DIR$/samples/samples.iml" />
+    </modules>
+  </component>
+</project>

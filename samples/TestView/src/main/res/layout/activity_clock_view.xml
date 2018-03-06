@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leachchen.testproject.testview.Activity.ClockViewActivity">
+    tools:context=".Activity.ClockViewActivity">
 
-    <com.leachchen.testproject.testview.View.ClockView
+    <com.leachchen.testview.View.ClockView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

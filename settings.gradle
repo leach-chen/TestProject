@@ -1,1 +1,1 @@
-include ':samples:TestView'
+include ':samples:TestView', ':samples:TestJni', ':samples:TestFFmpeg', ':samples:TestGps'
