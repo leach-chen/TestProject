@@ -3,12 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" filepath="$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestGps/testgps.iml" filepath="$PROJECT_DIR$/samples/TestGps/testgps.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestGpsMap/TestGpsMap.iml" filepath="$PROJECT_DIR$/samples/TestGpsMap/TestGpsMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestIjkplayer/testijkplayer.iml" filepath="$PROJECT_DIR$/samples/TestIjkplayer/testijkplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestJni/TestJni.iml" filepath="$PROJECT_DIR$/samples/TestJni/TestJni.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestView/TestView.iml" filepath="$PROJECT_DIR$/samples/TestView/TestView.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/samples.iml" filepath="$PROJECT_DIR$/samples/samples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/samples/testGps/testgps.iml" filepath="$PROJECT_DIR$/samples/testGps/testgps.iml" />
     </modules>
   </component>
 </project>
