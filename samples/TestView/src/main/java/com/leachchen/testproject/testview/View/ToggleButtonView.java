@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Scroller;
 
-import com.leachchen.testproject.testview.R;
+import com.leachchen.testview.R;
 
 
 /**

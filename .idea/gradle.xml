@@ -10,9 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/samples" />
             <option value="$PROJECT_DIR$/samples/TestFFmpeg" />
-            <option value="$PROJECT_DIR$/samples/TestGps" />
+            <option value="$PROJECT_DIR$/samples/TestGpsMap" />
             <option value="$PROJECT_DIR$/samples/TestJni" />
             <option value="$PROJECT_DIR$/samples/TestView" />
+            <option value="$PROJECT_DIR$/samples/testGps" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

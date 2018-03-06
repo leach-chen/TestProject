@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.leachchen.testproject.testview.R;
+import com.leachchen.testview.R;
 
 
 /**

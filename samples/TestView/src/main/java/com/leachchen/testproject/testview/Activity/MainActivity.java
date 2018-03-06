@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.leachchen.testproject.testview.R;
 import com.leachchen.testproject.testview.View.ArcProgressView;
+import com.leachchen.testview.R;
 
 import java.util.ArrayList;
 import java.util.List;
