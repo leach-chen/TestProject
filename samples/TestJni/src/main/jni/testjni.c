@@ -9,5 +9,5 @@ Java_com_leachchen_testjni_MainActivity_testMethod(JNIEnv *env, jobject instance
 
     (*env)->ReleaseStringUTFChars(env, name_, name);
 
-    return (*env)->NewStringUTF(env, returnValue);
+    return (*env)->NewStringUTF(env, name);
 }
