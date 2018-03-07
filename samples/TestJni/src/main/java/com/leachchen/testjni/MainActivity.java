@@ -10,4 +10,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    static {
+        System.loadLibrary("testjni");
+    }
+
+    public native String testMethod(int id,String name);
 }
