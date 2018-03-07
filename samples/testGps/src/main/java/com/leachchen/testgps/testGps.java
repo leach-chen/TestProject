@@ -69,7 +69,7 @@ public class testGps {
                 if (gprmsc.getLatitude() != 0) {
                     double[] data = EvilTransform.transform(gprmsc.getLatitude(), gprmsc.getLongitude());//Gps位置校正
                     String endDateStr = date2yyyyMMddHHmm(gprmsc.getReadingDate());
-                    System.out.println("校正前:" + "getLatitude:" + gprmsc.getLatitude() + "--getLongitude:" + gprmsc.getLongitude() + " 校正后:" + "getLatitude:" + data[0] + "--getLongitude:" + data[1] + " 时间:" + endDateStr);
+                    System.out.println("校正前:" + "getLatitude:" + gprmsc.getLatitude() + "--getLongitude:" + gprmsc.getLongitude() + "        校正后:" + "getLatitude:" + data[0] + "--getLongitude:" + data[1] + "        时间:" + endDateStr);
 
                     if (beforeLatitude != 0) {
                         distance += EvilTransform.GetShortDistance(beforeLongitude, beforeLatitude, data[1], data[0]);
