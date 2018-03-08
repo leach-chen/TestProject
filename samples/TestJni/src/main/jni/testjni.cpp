@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <jni.h>
 #include <iostream>
+#include "logHelp.h"
+
 using namespace std;
 
 #define CLASS_PATH_NAME	 "com/leachchen/testjni/MainActivity"
@@ -23,6 +25,7 @@ Java_com_leachchen_testjni_MainActivity_testMethod(JNIEnv *env, jobject instance
  */
 jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_) {
     const char *name = env->GetStringUTFChars(name_, 0);
+    LOGE("get java value:%s",name);
     char buff[128] = {0};
     sprintf(buff,"I am from C part String and get java part String:%s",name);
     env->ReleaseStringUTFChars(name_, name);
