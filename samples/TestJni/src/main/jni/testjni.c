@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <jni.h>
 
@@ -9,5 +10,4 @@ Java_com_leachchen_testjni_MainActivity_testMethod(JNIEnv *env, jobject instance
     (*env)->ReleaseStringUTFChars(env, name_, name);
 
     return (*env)->NewStringUTF(env, buff);
-}
-
+}*/
