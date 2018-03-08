@@ -31,7 +31,7 @@ jstring testJniMethod(JNIEnv *env, jobject instance, jstring name_) {
 }
 
 
-//注册Java端的方法  以及本地相对应的方法
+//注册Java端的方法以及本地相对应的方法
 JNINativeMethod method[]={
         {
               "testMethod", //Java中native函数的函数名
