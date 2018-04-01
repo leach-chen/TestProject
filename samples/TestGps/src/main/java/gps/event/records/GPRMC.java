@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 /**
  * Recommended minimum
- * 
+ *
  */
 public class GPRMC extends GpsInfoRecord {
 
@@ -37,12 +37,20 @@ public class GPRMC extends GpsInfoRecord {
 		try
 		{
 			if (fields.length >= 10) {
+				boolean isDateRight = false;
 				try {
-					this.readingDate = dateFormat.parse(fields[9] + " " + fields[1]);
+					if(fields[9].equals("") || fields[1].equals(""))
+					{
+						isDateRight = false;
+					}else
+					{
+						isDateRight = true;
+						this.readingDate = dateFormat.parse(fields[9] + " " + fields[1]);
+					}
 				} catch (ParseException e) {
 					this.readingDate = new Date();
 				}
-				if(fields[2].equals("A") && ((fields[4].equals("S") || fields[4].equals("N")) && (fields[6].equals("W") || fields[6].equals("E"))))
+				if(isDateRight && (fields[2].equals("A") && ((fields[4].equals("S") || fields[4].equals("N")) && (fields[6].equals("W") || fields[6].equals("E")))))
 				{
 					this.isValid = true;
 
@@ -53,7 +61,7 @@ public class GPRMC extends GpsInfoRecord {
 					{
 						this.isValid = false;
 					}
-					
+
 					String aSpeed = fields[7];
 					if(aSpeed.length() > 0)
 					{
@@ -63,12 +71,12 @@ public class GPRMC extends GpsInfoRecord {
 							this.isValid = false;
 						}
 					}
-					
+
 				}else
 				{
 					this.isValid = false;
 				}
-				
+
 				if (this.isValid) {
 					String rawLat = fields[3];
 					String rawLong = fields[5];
@@ -87,17 +95,17 @@ public class GPRMC extends GpsInfoRecord {
 						if (fields[6].equals("W")) {
 							this.longitude *= -1;
 						}
-	
+
 						if (aDegrees.length() > 0) {
 							angelDegrees = Double.parseDouble(aDegrees);
 						}
 					}
-	
+
 				}
 			}
 		}catch(Exception e)
 		{
-			
+
 		}
 	}
 
@@ -116,7 +124,7 @@ public class GPRMC extends GpsInfoRecord {
 	public double getAngelDegrees() {
 		return angelDegrees;
 	}
-	
+
 	public Date getReadingDate() {
 		return readingDate;
 	}
@@ -124,7 +132,7 @@ public class GPRMC extends GpsInfoRecord {
 	public String toString() {
 		return fields[0] + " " + (isValid ? "Valid" : "Not Valid") + " at " + readingDate
 				+ (this.isValid ? (" Lat: " + Math.abs(latitude) + (latitude < 0 ? "S" : "N") + " Long: "
-						+ Math.abs(longitude) + (longitude < 0 ? "W" : "E")) : "");
+				+ Math.abs(longitude) + (longitude < 0 ? "W" : "E")) : "");
 	}
 
 }
