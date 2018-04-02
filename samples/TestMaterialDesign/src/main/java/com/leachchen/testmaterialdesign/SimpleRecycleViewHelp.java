@@ -73,8 +73,10 @@ public class SimpleRecycleViewHelp {
                     @Override
                     public void onClick(View view) {
                         int position = getLayoutPosition();
-                        Intent intent = new Intent(mContext,mClassList.get(position));
-                        mContext.startActivity(intent);
+                        if(position < mClassList.size()) {
+                            Intent intent = new Intent(mContext, mClassList.get(position));
+                            mContext.startActivity(intent);
+                        }
                     }
                 });
             }
