@@ -17,7 +17,6 @@ public class Type1Activity extends AppCompatActivity {
 
         new SimpleRecycleViewHelp(this,recyclerView,
                 new ArrayList<Class>(){{
-                    add(Type1Activity.class);
                 }},
                 new ArrayList<String>(){{
                     add("test");
