@@ -5,12 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leachchen.testmaterialdesign.MainActivity">
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_material_design"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+    tools:context="com.leachchen.testmaterialdesign.Type1Activity">
 
 </android.support.constraint.ConstraintLayout>
