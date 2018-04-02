@@ -60,7 +60,7 @@ public class SimpleRecycleViewHelp {
 
         @Override
         public int getItemCount() {
-            return mClassList.size();
+            return mStringList.size();
         }
 
         public class ViewHoler extends RecyclerView.ViewHolder
