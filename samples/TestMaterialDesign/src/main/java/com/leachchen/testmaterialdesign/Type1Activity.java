@@ -18,11 +18,26 @@ public class Type1Activity extends AppCompatActivity {
         new SimpleRecycleViewHelp(this,recyclerView,
                 new ArrayList<Class>(){{
                     add(Type1Activity.class);
-                    add(Type1Activity.class);
                 }},
                 new ArrayList<String>(){{
-                    add("样式1");
-                    add("样式2");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
+                    add("test");
                 }});
     }
 }
