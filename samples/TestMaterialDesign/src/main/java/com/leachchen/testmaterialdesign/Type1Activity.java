@@ -19,7 +19,7 @@ public class Type1Activity extends AppCompatActivity {
                 new ArrayList<Class>(){{
                 }},
                 new ArrayList<String>(){{
-                    add("test");
+                    add("aaa");
                     add("test");
                     add("test");
                     add("test");
