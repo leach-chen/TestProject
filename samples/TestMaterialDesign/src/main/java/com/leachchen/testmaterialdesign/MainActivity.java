@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
                 new ArrayList<Class>(){{
                     add(Type1Activity.class);
                     add(Type2Activity.class);
+                    add(Type3Activity.class);
+                    add(Type4Activity.class);
                 }},
                 new ArrayList<String>(){{
                     add("样式1");
                     add("样式2");
+                    add("样式3");
+                    add("样式4");
                 }});
     }
 }

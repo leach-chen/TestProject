@@ -20,6 +20,10 @@
         </activity>
         <activity android:name=".Type2Activity">
         </activity>
+        <activity android:name=".Type3Activity">
+        </activity>
+        <activity android:name=".Type4Activity">
+        </activity>
     </application>
 
 </manifest>

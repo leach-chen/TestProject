@@ -79,7 +79,7 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="15dp"
         android:src="@android:drawable/ic_menu_close_clear_cancel"
-        app:layout_behavior="com.leachchen.testmaterialdesign.ScrollAwareFABBehavior"
+        app:layout_behavior="com.leachchen.testmaterialdesign.Behavior.ScrollAwareFABBehavior"
        />
 
 </android.support.design.widget.CoordinatorLayout>
