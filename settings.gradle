@@ -1,1 +1,1 @@
-include ':samples:TestView', ':samples:TestJni', ':samples:TestFFmpeg', ':samples:TestGpsMap', ':samples:TestGps', ':samples:TestIjkplayer', ':samples:TestAndroidStudio', ':samples:TestMaterialDesign', ':samples:TestAnimation'
+include ':samples:TestView', ':samples:TestJni', ':samples:TestFFmpeg', ':samples:TestGpsMap', ':samples:TestGps', ':samples:TestIjkplayer' , ':samples:TestMaterialDesign', ':samples:TestAnimation', ':samples:TestDemoActivity'

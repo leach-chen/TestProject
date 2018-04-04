@@ -9,8 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/samples" />
-            <option value="$PROJECT_DIR$/samples/TestAndroidStudio" />
             <option value="$PROJECT_DIR$/samples/TestAnimation" />
+            <option value="$PROJECT_DIR$/samples/TestDemoActivity" />
             <option value="$PROJECT_DIR$/samples/TestFFmpeg" />
             <option value="$PROJECT_DIR$/samples/TestGps" />
             <option value="$PROJECT_DIR$/samples/TestGpsMap" />
