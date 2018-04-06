@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         mClassList.add(ArrowTextViewActivity.class);mStringList.add("箭头文本");
         mClassList.add(ClockViewActivity.class);mStringList.add("绘制时钟");
+        mClassList.add(ScrollBackActivity.class);mStringList.add("滑动回弹");
+        mClassList.add(ScrollBackListActivity.class);mStringList.add("滑动列表回弹");
 
         MyAdapter myAdapter = new MyAdapter();
 

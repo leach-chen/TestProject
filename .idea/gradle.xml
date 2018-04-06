@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/samples" />
             <option value="$PROJECT_DIR$/samples/TestAnimation" />
             <option value="$PROJECT_DIR$/samples/TestDemoActivity" />
+            <option value="$PROJECT_DIR$/samples/TestEventPass" />
             <option value="$PROJECT_DIR$/samples/TestFFmpeg" />
             <option value="$PROJECT_DIR$/samples/TestGps" />
             <option value="$PROJECT_DIR$/samples/TestGpsMap" />
