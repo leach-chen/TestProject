@@ -60,7 +60,7 @@ public class MyLinearLayoutOther extends LinearLayout {
         Log.e("mytestt","..........MyLinearLayoutOther onTouchEvent run");
         boolean value =  super.onTouchEvent(event);
         Log.e("mytest","MyLinearLayoutOther onTouchEvent:"+value);
-        return true;
+        return value;
     }
 
 }
