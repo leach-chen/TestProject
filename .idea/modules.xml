@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/samples/TestAnimation/TestAnimation.iml" filepath="$PROJECT_DIR$/samples/TestAnimation/TestAnimation.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestDemoActivity/TestDemoActivity.iml" filepath="$PROJECT_DIR$/samples/TestDemoActivity/TestDemoActivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestEventPass/TestEventPass.iml" filepath="$PROJECT_DIR$/samples/TestEventPass/TestEventPass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestEventPass/TestEventPass.iml" filepath="$PROJECT_DIR$/samples/TestEventPass/TestEventPass.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" filepath="$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestGps/TestGps.iml" filepath="$PROJECT_DIR$/samples/TestGps/TestGps.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestGpsMap/TestGpsMap.iml" filepath="$PROJECT_DIR$/samples/TestGpsMap/TestGpsMap.iml" />
