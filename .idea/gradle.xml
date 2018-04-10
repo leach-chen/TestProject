@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/samples/TestIjkplayer" />
             <option value="$PROJECT_DIR$/samples/TestJni" />
             <option value="$PROJECT_DIR$/samples/TestMaterialDesign" />
+            <option value="$PROJECT_DIR$/samples/TestSystemAlbum" />
             <option value="$PROJECT_DIR$/samples/TestView" />
           </set>
         </option>
