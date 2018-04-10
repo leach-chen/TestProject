@@ -9,7 +9,7 @@ import android.database.Cursor;
  * Date:        2018/4/10 11:19
  **/
 
-public class PhoneAlbumClassifyBean {
+public class AlbumClassifyBean {
 
     //{"bucket_display_name":"Camera","fileCount":1,"filePath":"/storage/emulated/0/DCIM/Camera/IMG_20180410_103950667.jpg"}
 
@@ -21,23 +21,33 @@ public class PhoneAlbumClassifyBean {
      }
      */
 
-    private String bucket_display_name;
+    private long id;
+    private String folderName;
     private int fileCount;
     private String filePath;
 
-    public PhoneAlbumClassifyBean(Cursor cursor)
+    public AlbumClassifyBean(Cursor cursor)
     {
-        this.bucket_display_name = cursor.getString(0);
-        this.fileCount = cursor.getInt(1);
-        this.filePath = cursor.getString(2);
+        this.id = cursor.getLong(0);
+        this.folderName = cursor.getString(1);
+        this.fileCount = cursor.getInt(2);
+        this.filePath = cursor.getString(3);
     }
 
-    public String getBucket_display_name() {
-        return bucket_display_name;
+    public long getId() {
+        return id;
     }
 
-    public void setBucket_display_name(String bucket_display_name) {
-        this.bucket_display_name = bucket_display_name;
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getFolderName() {
+        return folderName;
+    }
+
+    public void setFolderName(String folderName) {
+        this.folderName = folderName;
     }
 
     public int getFileCount() {

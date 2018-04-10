@@ -24,7 +24,7 @@ public class PhoneVideoThumbBean {
      }
      */
 
-    private int _id;
+    private long _id;
     private String _data;
     private int video_id;
     private int kind;
@@ -41,11 +41,11 @@ public class PhoneVideoThumbBean {
         this.height = cursor.getInt(5);
     }
 
-    public int get_id() {
+    public long get_id() {
         return _id;
     }
 
-    public void set_id(int _id) {
+    public void set_id(long _id) {
         this._id = _id;
     }
 

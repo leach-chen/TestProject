@@ -23,7 +23,7 @@ public class PhoneImageThumbBean {
      }
      */
 
-    private int _id;
+    private long _id;
     private String _data;
     private int image_id;
     private int kind;
@@ -32,7 +32,7 @@ public class PhoneImageThumbBean {
 
     public PhoneImageThumbBean(Cursor cursor)
     {
-        this._id = cursor.getInt(0);
+        this._id = cursor.getLong(0);
         this._data = cursor.getString(1);
         this.image_id = cursor.getInt(2);
         this.kind = cursor.getInt(3);
@@ -40,11 +40,11 @@ public class PhoneImageThumbBean {
         this.height = cursor.getInt(5);
     }
 
-    public int get_id() {
+    public long get_id() {
         return _id;
     }
 
-    public void set_id(int _id) {
+    public void set_id(long _id) {
         this._id = _id;
     }
 

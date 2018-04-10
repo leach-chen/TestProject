@@ -37,7 +37,7 @@ public class PhoneImageBean {
      **/
 
 
-    private int _id;
+    private long _id;
     private String _data;
     private long _size;
     private String _display_name;
@@ -60,7 +60,7 @@ public class PhoneImageBean {
 
     public PhoneImageBean(Cursor cursor)
     {
-        this._id = cursor.getInt(0);
+        this._id = cursor.getLong(0);
         this._data = cursor.getString(1);
         this._size = cursor.getLong(2);
         this._display_name = cursor.getString(3);
@@ -82,11 +82,11 @@ public class PhoneImageBean {
         this.height = cursor.getInt(19);
     }
 
-    public int get_id() {
+    public long get_id() {
         return _id;
     }
 
-    public void set_id(int _id) {
+    public void set_id(long _id) {
         this._id = _id;
     }
 
