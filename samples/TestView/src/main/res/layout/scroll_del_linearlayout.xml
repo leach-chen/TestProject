@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_666666"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_channel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="测试item"
+                android:textColor="@color/color_2D2D2D"
+                android:textSize="@dimen/sp_14"
+                />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_delpart"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="match_parent"
+            android:background="@color/color_FF3B30">
+
+            <ImageView
+                android:id="@+id/iv_slidedel"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center"
+                android:src="@drawable/home_icon_phone"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tv_slidedel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="滑动删除"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/sp_14"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_FFFFFF"
+        ></View>
+
+</LinearLayout>

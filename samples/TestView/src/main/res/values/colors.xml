@@ -3,4 +3,51 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_E6E6E6">#E6E6E6</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_C8C7CC">#C8C7CC</color>
+    <color name="color_2B2B2B">#2B2B2B</color>
+    <color name="color_007AFF">#007AFF</color>
+
+    <color name="color_21272A">#21272A</color>
+    <color name="color_F8F8F8">#F8F8F8</color>
+    <color name="color_FF3B30">#FF3B30</color>
+    <color name="color_3A3E47">#3A3E47</color>
+    <color name="color_83878E">#83878E</color>
+    <color name="color_03BFFE">#03BFFE</color>
+    <color name="color_00A9E2">#00A9E2</color>
+    <color name="color_4E525C">#4E525C</color>
+    <color name="color_A2A7B2">#A2A7B2</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_CC000000">#CC000000</color>
+    <color name="color_99121820">#99121820</color>
+    <color name="color_FF6161">#FF6161</color>
+    <color name="color_F75D5D">#F75D5D</color>
+    <color name="color_575C67">#575C67</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_242527">#242527</color>
+    <color name="color_767b88">#767b88</color>
+    <color name="color_202020">#202020</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_3F434B">#3F434B</color>
+    <color name="color_F4FF6">#F4F5F6</color>
+    <color name="color_494F5D">#494F5D</color>
+    <color name="color_6D7589">#6D7589</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+    <color name="color_53575A">#53575A</color>
+    <color name="color_838892">#838892</color>
+    <color name="color_676D79">#676D79</color>
+    <color name="color_999999">#999999</color>
+
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="color_CC7B7B7B">#CC7B7B7B</color>
+    <color name="color_807B7B7B">#807B7B7B</color>
+    <color name="color_D3D3D3">#D3D3D3</color>
+    <color name="color_FCFCFC">#FCFCFC</color>
+    <color name="color_9B9B9B">#9B9B9B</color>
+    <color name="color_DDDDDD">#DDDDDD</color>
+    <color name="color_2D2D2D">#2D2D2D</color>
+    <color name="color_F4F4F4">#F4F4F4</color>
 </resources>

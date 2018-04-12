@@ -1,4 +1,4 @@
-package com.leachchen.testview.View;
+package com.leachchen.testview.View.Other;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.leachchen.testview.R;
+import com.leachchen.testview.View.RoundWaveView;
 
 
 /**

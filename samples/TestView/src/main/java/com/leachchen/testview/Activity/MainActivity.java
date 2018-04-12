@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mClassList.add(ClockViewActivity.class);mStringList.add("绘制时钟");
         mClassList.add(ScrollBackActivity.class);mStringList.add("滑动回弹");
         mClassList.add(ScrollBackListActivity.class);mStringList.add("滑动列表回弹");
+        mClassList.add(ScrollDelActivity.class);mStringList.add("scroll测试");
 
         MyAdapter myAdapter = new MyAdapter();
 
