@@ -42,7 +42,7 @@ public class ScrollDelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scroll_del);
 
-        rv_recycle = (RecyclerView)this.findViewById(R.id.rv_recycle);
+/*        rv_recycle = (RecyclerView)this.findViewById(R.id.rv_recycle);
 
         mStringList.add("aa");
         mStringList.add("aa");
@@ -63,7 +63,7 @@ public class ScrollDelActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         rv_recycle.setLayoutManager(layoutManager);
-        rv_recycle.setAdapter(myAdapter);
+        rv_recycle.setAdapter(myAdapter);*/
 
     }
 
