@@ -12,8 +12,10 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -28,7 +30,9 @@ import com.leachchen.testmarkdown.markdown1.TabIconView;
 
 import java.io.File;
 
-public class Markdown1Activity extends AppCompatActivity implements View.OnClickListener{
+import ren.qinc.edit.PerformEdit;
+
+public class Markdown1Activity extends AppCompatActivity implements View.OnClickListener {
 
     private final int SYSTEM_GALLERY = 1;
     protected Toolbar mToolbar;
@@ -41,16 +45,17 @@ public class Markdown1Activity extends AppCompatActivity implements View.OnClick
     private MenuItem mActionOtherOperate;
 
     private PerformEditable mPerformEditable;
+    private PerformEdit mPerformEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_markdown1);
 
-        mAppBar = (AppBarLayout)this.findViewById(R.id.id_appbar);
-        mToolbar = (Toolbar)this.findViewById(R.id.id_toolbar);
-        mExpandLayout = (ExpandableLinearLayout)this.findViewById(R.id.action_other_operate);
-        mTabIconView = (TabIconView)this.findViewById(R.id.tabIconView);
+        mAppBar = (AppBarLayout) this.findViewById(R.id.id_appbar);
+        mToolbar = (Toolbar) this.findViewById(R.id.id_toolbar);
+        mExpandLayout = (ExpandableLinearLayout) this.findViewById(R.id.action_other_operate);
+        mTabIconView = (TabIconView) this.findViewById(R.id.tabIconView);
         et_content = (EditText) this.findViewById(R.id.et_content);
 
         mPerformEditable = new PerformEditable(et_content);
@@ -78,6 +83,15 @@ public class Markdown1Activity extends AppCompatActivity implements View.OnClick
         mTabIconView.addTab(R.drawable.ic_shortcut_format_header_4, R.id.id_shortcut_format_header_4, this);
         mTabIconView.addTab(R.drawable.ic_shortcut_format_header_5, R.id.id_shortcut_format_header_5, this);
         mTabIconView.addTab(R.drawable.ic_shortcut_format_header_6, R.id.id_shortcut_format_header_6, this);
+
+
+        //撤销和恢复初始化
+        mPerformEdit = new PerformEdit(et_content) {
+            @Override
+            protected void onTextChanged(Editable s) {
+            }
+        };
+
     }
 
     @Override
@@ -93,8 +107,14 @@ public class Markdown1Activity extends AppCompatActivity implements View.OnClick
                 return true;
             case R.id.action_preview:
                 Intent intent = new Intent(this, Markdown1PreviewActivity.class);
-                intent.putExtra(Markdown1PreviewActivity.PREVIEW_MARKDOWN,et_content.getText().toString());
+                intent.putExtra(Markdown1PreviewActivity.PREVIEW_MARKDOWN, et_content.getText().toString());
                 startActivity(intent);
+                break;
+            case R.id.action_undo:
+                mPerformEdit.undo();
+                break;
+            case R.id.action_redo:
+                mPerformEdit.redo();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -256,7 +276,7 @@ public class Markdown1Activity extends AppCompatActivity implements View.OnClick
                 Uri.fromFile(new File(path));//Uri.decode(imageUri.toString())
                 mPerformEditable.perform(R.id.id_shortcut_insert_photo, Uri.fromFile(new File(path)));
             } else {
-                Toast.makeText(this, "图片处理失败",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "图片处理失败", Toast.LENGTH_SHORT).show();
             }
         }
 
