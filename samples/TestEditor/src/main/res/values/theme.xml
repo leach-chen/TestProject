@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorHighlight">#66795548</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textCursorDrawable">@drawable/custom_cursor_light</item>
+    </style>
+</resources>

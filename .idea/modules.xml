@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/samples/TestAnimation/TestAnimation.iml" filepath="$PROJECT_DIR$/samples/TestAnimation/TestAnimation.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestDemoActivity/TestDemoActivity.iml" filepath="$PROJECT_DIR$/samples/TestDemoActivity/TestDemoActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestEditor/TestEditor.iml" filepath="$PROJECT_DIR$/samples/TestEditor/TestEditor.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestEventPass/TestEventPass.iml" filepath="$PROJECT_DIR$/samples/TestEventPass/TestEventPass.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" filepath="$PROJECT_DIR$/samples/TestFFmpeg/TestFFmpeg.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestGps/TestGps.iml" filepath="$PROJECT_DIR$/samples/TestGps/TestGps.iml" />
@@ -14,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" filepath="$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestView/TestView.iml" filepath="$PROJECT_DIR$/samples/TestView/TestView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/markdown/markdown.iml" filepath="$PROJECT_DIR$/markdown/markdown.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/samples.iml" filepath="$PROJECT_DIR$/samples/samples.iml" />
     </modules>
   </component>

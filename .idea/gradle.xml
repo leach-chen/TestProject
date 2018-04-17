@@ -8,9 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/markdown" />
             <option value="$PROJECT_DIR$/samples" />
             <option value="$PROJECT_DIR$/samples/TestAnimation" />
             <option value="$PROJECT_DIR$/samples/TestDemoActivity" />
+            <option value="$PROJECT_DIR$/samples/TestEditor" />
             <option value="$PROJECT_DIR$/samples/TestEventPass" />
             <option value="$PROJECT_DIR$/samples/TestFFmpeg" />
             <option value="$PROJECT_DIR$/samples/TestGps" />
