@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.leachchen.testmarkdown.markdown1;
+package com.leachchen.testmarkdown.Markdown;
 
 import java.util.Collection;
 import java.util.Map;

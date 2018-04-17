@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leachchen.testmarkdown.markdown1.Markdown1PreviewActivity">
+    tools:context="com.leachchen.testmarkdown.Markdown.Markdown1PreviewActivity">
 
-    <com.leachchen.testmarkdown.markdown1.MarkdownPreviewView
+    <com.leachchen.testmarkdown.Markdown.MarkdownPreviewView
         android:id="@+id/pre_markdown"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.leachchen.testmarkdown.markdown1.MarkdownPreviewView>
+        android:layout_height="match_parent"></com.leachchen.testmarkdown.Markdown.MarkdownPreviewView>
 
 </android.support.constraint.ConstraintLayout>

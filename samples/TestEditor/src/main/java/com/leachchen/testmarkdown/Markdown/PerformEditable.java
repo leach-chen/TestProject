@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.leachchen.testmarkdown.markdown1;
+package com.leachchen.testmarkdown.Markdown;
 
 import android.view.View;
 import android.widget.EditText;

@@ -56,7 +56,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/shadow"/>
 
-            <com.leachchen.testmarkdown.markdown1.ExpandableLinearLayout
+            <com.leachchen.testmarkdown.Markdown.ExpandableLinearLayout
                 android:id="@+id/action_other_operate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,13 +66,13 @@
                 app:el_duration="400"
                 app:el_expanded="false">
 
-                <com.leachchen.testmarkdown.markdown1.TabIconView
+                <com.leachchen.testmarkdown.Markdown.TabIconView
                     android:id="@+id/tabIconView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_expandable="true"/>
 
-            </com.leachchen.testmarkdown.markdown1.ExpandableLinearLayout>
+            </com.leachchen.testmarkdown.Markdown.ExpandableLinearLayout>
         </FrameLayout>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

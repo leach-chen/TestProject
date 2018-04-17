@@ -1,4 +1,4 @@
-package com.leachchen.testmarkdown.markdown1;
+package com.leachchen.testmarkdown.Markdown;
 
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
