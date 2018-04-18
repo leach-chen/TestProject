@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/markdown" />
+            <option value="$PROJECT_DIR$/libs" />
+            <option value="$PROJECT_DIR$/libs/commonBase" />
+            <option value="$PROJECT_DIR$/libs/markdown" />
+            <option value="$PROJECT_DIR$/libs/recyclerview-swipe" />
             <option value="$PROJECT_DIR$/samples" />
             <option value="$PROJECT_DIR$/samples/TestAnimation" />
             <option value="$PROJECT_DIR$/samples/TestDemoActivity" />
@@ -20,6 +23,7 @@
             <option value="$PROJECT_DIR$/samples/TestIjkplayer" />
             <option value="$PROJECT_DIR$/samples/TestJni" />
             <option value="$PROJECT_DIR$/samples/TestMaterialDesign" />
+            <option value="$PROJECT_DIR$/samples/TestRecycleView" />
             <option value="$PROJECT_DIR$/samples/TestSystemAlbum" />
             <option value="$PROJECT_DIR$/samples/TestView" />
           </set>

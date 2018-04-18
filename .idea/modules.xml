@@ -13,9 +13,13 @@
       <module fileurl="file://$PROJECT_DIR$/samples/TestJni/TestJni.iml" filepath="$PROJECT_DIR$/samples/TestJni/TestJni.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestMaterialDesign/TestMaterialDesign.iml" filepath="$PROJECT_DIR$/samples/TestMaterialDesign/TestMaterialDesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestRecycleView/TestRecycleView.iml" filepath="$PROJECT_DIR$/samples/TestRecycleView/TestRecycleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" filepath="$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestView/TestView.iml" filepath="$PROJECT_DIR$/samples/TestView/TestView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/markdown/markdown.iml" filepath="$PROJECT_DIR$/markdown/markdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/commonBase/commonBase.iml" filepath="$PROJECT_DIR$/libs/commonBase/commonBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/markdown/markdown.iml" filepath="$PROJECT_DIR$/libs/markdown/markdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/recyclerview-swipe/recyclerview-swipe.iml" filepath="$PROJECT_DIR$/libs/recyclerview-swipe/recyclerview-swipe.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/samples.iml" filepath="$PROJECT_DIR$/samples/samples.iml" />
     </modules>
   </component>

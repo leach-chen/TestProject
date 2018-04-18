@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.leachchen.testrecycleview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SlideDelActivity">
+        </activity>
+        <activity android:name=".DragSwipListActivity">
+        </activity>
+        <activity android:name=".BaseActivity">
+        </activity>
+        <activity android:name=".BaseDragActivity">
+        </activity>
+        <activity android:name=".DragSwipGridActivity">
+        </activity>
+        <activity android:name=".DragSwipList1Activity">
+        </activity>
+        <activity android:name=".DragSwipList2Activity">
+        </activity>
+    </application>
+
+</manifest>
