@@ -8,6 +8,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends BaseRecycleActivity {
 
+    //https://github.com/yanzhenjie/SwipeRecyclerView
+    //https://github.com/AItsuki/SwipeMenuRecyclerView
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
