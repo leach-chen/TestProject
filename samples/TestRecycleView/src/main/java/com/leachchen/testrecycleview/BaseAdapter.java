@@ -24,11 +24,11 @@ import java.util.List;
 /**
  * Created by YanZhenjie on 2017/10/3.
  */
-public abstract class BaseAdapter1<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {
+public abstract class BaseAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {
 
     private LayoutInflater mInflater;
 
-    public BaseAdapter1(Context context) {
+    public BaseAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 

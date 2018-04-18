@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * Created by YOLANDA on 2016/7/22.
  */
-public class MainAdapter extends BaseAdapter1<MainAdapter.ViewHolder> {
+public class MainAdapter extends BaseAdapter<MainAdapter.ViewHolder> {
 
     private List<String> mDataList;
 

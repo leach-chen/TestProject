@@ -32,7 +32,7 @@ import java.util.List;
  * </p>
  * Created by YanZhenjie on 2016/7/22.
  */
-public class DragTouchAdapter extends BaseAdapter1<DragTouchAdapter.ViewHolder> {
+public class DragTouchAdapter extends BaseAdapter<DragTouchAdapter.ViewHolder> {
 
     private SwipeMenuRecyclerView mMenuRecyclerView;
     private List<String> mDataList;

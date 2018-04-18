@@ -25,7 +25,7 @@ public class DragSwipList1Activity extends BaseDragActivity {
     }
 
     @Override
-    protected BaseAdapter1 createAdapter() {
+    protected BaseAdapter createAdapter() {
         return new DragTouchAdapter(this, mRecyclerView);
     }
 

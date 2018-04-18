@@ -21,7 +21,7 @@ public class BaseActivity extends AppCompatActivity  implements SwipeItemClickLi
     protected RecyclerView.LayoutManager mLayoutManager;
     protected RecyclerView.ItemDecoration mItemDecoration;
     protected List<String> mDataList;
-    protected BaseAdapter1 mAdapter;
+    protected BaseAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class BaseActivity extends AppCompatActivity  implements SwipeItemClickLi
     }
 
 
-    protected BaseAdapter1 createAdapter() {
+    protected BaseAdapter createAdapter() {
         return new MainAdapter(this);
     }
 
