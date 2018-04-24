@@ -21,6 +21,10 @@
         <activity android:name=".Activity.ScrollBackListActivity"/>
         <activity android:name=".Activity.ScrollDelActivity">
         </activity>
+        <activity android:name=".Activity.FavoriteActivity">
+        </activity>
+        <activity android:name=".Activity.RoundShadeActivity">
+        </activity>
     </application>
 
 </manifest>
