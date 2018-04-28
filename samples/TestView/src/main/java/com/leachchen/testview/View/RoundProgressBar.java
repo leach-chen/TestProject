@@ -2,19 +2,13 @@ package com.leachchen.testview.View;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.RectF;
-import android.graphics.Shader;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.View;
 
 import com.leachchen.testview.R;
-
-import static android.R.attr.bitmap;
 
 
 /**
@@ -51,7 +45,7 @@ public class RoundProgressBar extends View {
 	/**
 	 * 圆环的宽度
 	 */
-	private float roundWidth;
+	private float roundWidth = 4;
 
 	/**
 	 * 最大进度
@@ -111,19 +105,30 @@ public class RoundProgressBar extends View {
 
 
 
-/*		*//**
-		 * 画最外层的大圆环
-		 *//*
+		setLayerType( LAYER_TYPE_SOFTWARE , null);
+
+
 		int centre = getWidth()/2; //获取圆心的x坐标
 		int radius = (int) (centre - roundWidth/2); //圆环的半径
 		paint.setColor(roundColor); //设置圆环的颜色
 		paint.setStyle(Paint.Style.STROKE); //设置空心
 		paint.setStrokeWidth(roundWidth); //设置圆环的宽度
-		paint.setShadowLayer(30, 5, 2, Color.GREEN);
+		paint.setShadowLayer(2, 0, 0, Color.GREEN);
 		paint.setAntiAlias(true);  //消除锯齿
-		canvas.drawCircle(centre, centre, radius, paint); //画出圆环*/
+		/*paint.setShadowLayer(12, 0, 0, Color.GRAY);*/
+		canvas.drawCircle(centre, centre, radius, paint); //画出圆环
 
 
+
+
+
+
+
+
+
+
+
+/*
 		setLayerType( LAYER_TYPE_SOFTWARE , null);
 
 		Paint paint3 = new Paint();
@@ -131,14 +136,32 @@ public class RoundProgressBar extends View {
 		paint3.setAntiAlias(true);  //消除锯齿
 		paint3.setStrokeWidth(10);
 		paint3.setColor(Color.WHITE);
-	/*	setLayerType( LAYER_TYPE_SOFTWARE , null);
+	*//*	setLayerType( LAYER_TYPE_SOFTWARE , null);
 		paint.setShadowLayer(10, 5, 2, Color.GREEN);
 		//paint.setMaskFilter(new BlurMaskFilter(50,BlurMaskFilter.Blur.NORMAL));
-		canvas.drawCircle(200, 130,10, paint3);*/
+		canvas.drawCircle(200, 130,10, paint3);*//*
 
-		setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		//setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+
+		int centre = getWidth()/2; //获取圆心的x坐标
+		int radius = (int) (centre - roundWidth/2); //圆环的半径
+
 		paint3.setShadowLayer(12, 0, 0, Color.GRAY);
-		canvas.drawCircle(200, 130,100, paint3);
+		canvas.drawCircle(centre, centre,radius, paint3);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/*	setLayerType( LAYER_TYPE_SOFTWARE , null);
 
