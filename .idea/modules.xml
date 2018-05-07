@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/samples/TestAccessibilityService/TestAccessibilityService.iml" filepath="$PROJECT_DIR$/samples/TestAccessibilityService/TestAccessibilityService.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestAnimation/TestAnimation.iml" filepath="$PROJECT_DIR$/samples/TestAnimation/TestAnimation.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestDemoActivity/TestDemoActivity.iml" filepath="$PROJECT_DIR$/samples/TestDemoActivity/TestDemoActivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestEditor/TestEditor.iml" filepath="$PROJECT_DIR$/samples/TestEditor/TestEditor.iml" />
@@ -15,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestRecycleView/TestRecycleView.iml" filepath="$PROJECT_DIR$/samples/TestRecycleView/TestRecycleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" filepath="$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestUIAutomator/TestUIAutomator.iml" filepath="$PROJECT_DIR$/samples/TestUIAutomator/TestUIAutomator.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestView/TestView.iml" filepath="$PROJECT_DIR$/samples/TestView/TestView.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/commonBase/commonBase.iml" filepath="$PROJECT_DIR$/libs/commonBase/commonBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />

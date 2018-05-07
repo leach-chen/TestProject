@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/libs/markdown" />
             <option value="$PROJECT_DIR$/libs/recyclerview-swipe" />
             <option value="$PROJECT_DIR$/samples" />
+            <option value="$PROJECT_DIR$/samples/TestAccessibilityService" />
             <option value="$PROJECT_DIR$/samples/TestAnimation" />
             <option value="$PROJECT_DIR$/samples/TestDemoActivity" />
             <option value="$PROJECT_DIR$/samples/TestEditor" />
@@ -25,6 +26,7 @@
             <option value="$PROJECT_DIR$/samples/TestMaterialDesign" />
             <option value="$PROJECT_DIR$/samples/TestRecycleView" />
             <option value="$PROJECT_DIR$/samples/TestSystemAlbum" />
+            <option value="$PROJECT_DIR$/samples/TestUIAutomator" />
             <option value="$PROJECT_DIR$/samples/TestView" />
           </set>
         </option>
