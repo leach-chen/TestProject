@@ -5,9 +5,9 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-        applicationId "com.leachchen.testuiautomator"
-        minSdkVersion 18
-        targetSdkVersion 22
+        applicationId "com.leachchen.testpart"
+        minSdkVersion 15
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
 
@@ -23,7 +23,6 @@ android {
 }
 
 dependencies {
-    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'

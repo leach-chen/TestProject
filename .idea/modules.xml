@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/samples/TestIjkplayer/TestIjkplayer.iml" filepath="$PROJECT_DIR$/samples/TestIjkplayer/TestIjkplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestJni/TestJni.iml" filepath="$PROJECT_DIR$/samples/TestJni/TestJni.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestMaterialDesign/TestMaterialDesign.iml" filepath="$PROJECT_DIR$/samples/TestMaterialDesign/TestMaterialDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestPart/TestPart.iml" filepath="$PROJECT_DIR$/samples/TestPart/TestPart.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProject.iml" filepath="$PROJECT_DIR$/TestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestRecycleView/TestRecycleView.iml" filepath="$PROJECT_DIR$/samples/TestRecycleView/TestRecycleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" filepath="$PROJECT_DIR$/samples/TestSystemAlbum/TestSystemAlbum.iml" />
