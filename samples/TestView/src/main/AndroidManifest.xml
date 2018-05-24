@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".Activity.RoundShadeActivity">
         </activity>
+        <activity android:name=".Activity.RoundImageActivity">
+        </activity>
     </application>
 
 </manifest>
