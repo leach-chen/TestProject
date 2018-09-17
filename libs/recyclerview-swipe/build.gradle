@@ -3,7 +3,6 @@ apply plugin: rootProject.ext.plugins.library
 android {
 
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -11,11 +10,12 @@ android {
     }
 
     resourcePrefix 'recycler_swipe_'
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
-    compile rootProject.ext.dependencies.recyclerView
-    compile rootProject.ext.dependencies.loading
+    implementation rootProject.ext.dependencies.recyclerView
+    implementation rootProject.ext.dependencies.loading
 }
 
 apply from: "https://raw.githubusercontent.com/yanzhenjie/bintray/master/maven.gradle"

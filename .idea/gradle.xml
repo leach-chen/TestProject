@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/lib" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/libs/commonBase" />
             <option value="$PROJECT_DIR$/libs/markdown" />
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$/samples/TestGps" />
             <option value="$PROJECT_DIR$/samples/TestGpsMap" />
             <option value="$PROJECT_DIR$/samples/TestIjkplayer" />
+            <option value="$PROJECT_DIR$/samples/TestJava" />
             <option value="$PROJECT_DIR$/samples/TestJni" />
             <option value="$PROJECT_DIR$/samples/TestMaterialDesign" />
             <option value="$PROJECT_DIR$/samples/TestPart" />

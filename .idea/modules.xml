@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/samples/TestGps/TestGps.iml" filepath="$PROJECT_DIR$/samples/TestGps/TestGps.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestGpsMap/TestGpsMap.iml" filepath="$PROJECT_DIR$/samples/TestGpsMap/TestGpsMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestIjkplayer/TestIjkplayer.iml" filepath="$PROJECT_DIR$/samples/TestIjkplayer/TestIjkplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/TestJava/TestJava.iml" filepath="$PROJECT_DIR$/samples/TestJava/TestJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestJni/TestJni.iml" filepath="$PROJECT_DIR$/samples/TestJni/TestJni.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestMaterialDesign/TestMaterialDesign.iml" filepath="$PROJECT_DIR$/samples/TestMaterialDesign/TestMaterialDesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestPart/TestPart.iml" filepath="$PROJECT_DIR$/samples/TestPart/TestPart.iml" />
@@ -20,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/samples/TestUIAutomator/TestUIAutomator.iml" filepath="$PROJECT_DIR$/samples/TestUIAutomator/TestUIAutomator.iml" />
       <module fileurl="file://$PROJECT_DIR$/samples/TestView/TestView.iml" filepath="$PROJECT_DIR$/samples/TestView/TestView.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/commonBase/commonBase.iml" filepath="$PROJECT_DIR$/libs/commonBase/commonBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/markdown/markdown.iml" filepath="$PROJECT_DIR$/libs/markdown/markdown.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/recyclerview-swipe/recyclerview-swipe.iml" filepath="$PROJECT_DIR$/libs/recyclerview-swipe/recyclerview-swipe.iml" />
