@@ -1,8 +1,6 @@
 package com.leachchen.testjava;
 
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 /**
  * 1.静态方法重写是无效的，调用的还是父类的方法，成员变量重写也是无效的，调用的还是父类的成员变量值,非私有成员方法可发生重写,不带修饰符的方法可以重写
  * 2.成员变量默认为default(friendly)类型，允许同一个包内的类访问
@@ -32,6 +30,15 @@ import com.sun.org.apache.bcel.internal.generic.NEW;
  * 21.定义局部变量必须赋值初始化
  * 22.标识符用来给变量，类，方法名等命名，标识符只能是字母数字下划线及$符号，不能以数字开头，不能为关键字，区分大小写
  * 23.匿名类直接在方法中new
+ * 24.对于字符串，对象的引用str存储在栈中，直接引号定义的存储在常量池中，运行时new出来的(new String("aa"))，存储在堆上，对于equals相等的字符串，常量区只有一份，堆中有多份,String str = new String("aa");
+ *    成员变量存储在堆的对象里，局部变量存储在栈中
+ *    对于基础类型的变量和常量，变量和引用存储在栈中，常量存储在常量池中
+ * 25.父类子类重写的方法，返回值一定要一致，子类该方法的修饰符要大于等于父类
+ * 26.A类里面new B类对象，若B类与A类在不同的包中，且B类不是public类，则不能new B类,在同一个包中不是public的类也可以new
+ * 27.new 子类给父类对象时，父类没有重写该方法，则父类不能直接通过对象调用该方法，得强转为子类对象
+ * 28.类方法为非private时，都可以被类对象调用，如果是内部类的方法，只有public方法可以调用
+ * 29.继承具有传递性，子类可以向最上层转型
+ * 30.构造函数不能被继承，只能显示或者隐式的调用
  */
 
 public class MyClass {
@@ -53,11 +60,11 @@ public class MyClass {
         bb = 10;    //新建过一个变量在栈中，传值时默认是2，重新赋值为10
     }
 
-
     public static void main(String []args)
     {
 
-/*        change(str,a,2);
+
+/*      change(str,a,2);
         System.out.println(str);
         System.out.println(a);
         System.out.println(bb);*/
@@ -70,11 +77,11 @@ public class MyClass {
         {
             System.out.println("ccccccccc");
         }*/
-        testPart.testPart13();
+        testPart.testPart14();
 
-/*      TestClassParent testClassParent = new TestClassChild();
+      TestClassParent testClassParent = new TestClassParent();
 
-        testClassParent.run();*/
+        testClassParent.run();
 
 
         //TestClassChild testClassChild = new TestClassChild();
@@ -94,6 +101,21 @@ public class MyClass {
 
         //new B();
     }
+
+    /*    class A
+    {
+
+    }
+
+    class B extends A{
+
+    }
+
+    class C extends A {
+        B b = null;
+        C c;
+        c =(C)b;
+    }*/
 
     static class Demo
     {

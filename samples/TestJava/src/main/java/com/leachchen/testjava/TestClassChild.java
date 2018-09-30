@@ -6,7 +6,9 @@ package com.leachchen.testjava;
  * Author :     leach.chen
  * Date:        2018/9/17 15:09
  **/
-public class TestClassChild extends TestClassParent  implements TestInterface {
+
+
+public class TestClassChild extends TestClassParent implements TestInterface {
 
     public String name="child";
 
@@ -38,6 +40,13 @@ public class TestClassChild extends TestClassParent  implements TestInterface {
     {
         System.out.println("TestClassChild run:"+name);
     }
+
+
+    public void runGo()
+    {
+        //new 子类给父类对象时，父类没有重写该方法，则父类不能直接通过对象调用该方法，得强转为子类对象
+    }
+
 
     @Override
     public void test() {

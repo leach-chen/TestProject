@@ -336,4 +336,43 @@ public class TestPart{
         System.out.println("k:"+k+" y:"+y);
     }
 
+    public void testPart14()
+    {
+        String st1 = new String("123");
+        String st2 = new String("123");
+        StringBuffer st3 = new StringBuffer("123");
+        String st4 = "123456";
+        String st5 = new String("456");
+        String st6 = st1+st5;
+        String st7 = "abc";
+        String st8 = "ab";
+        String st9 = st8+ "c";
+        String st10 = "ab" + "c";
+
+        String st11 = "123";
+        String st12 = "123";
+
+
+        System.out.println(st1.equals(st2)); //值要相等   true
+        System.out.println(st1 == st2); //内存地址及值都要相等 false
+
+        System.out.println(st1.equals(st3)); // 值及类型要相等false
+
+        System.out.println(st4.equals(st6)); // true
+        System.out.println(st4 == st6); // false
+
+        System.out.println(st7.equals(st9)); // true
+        System.out.println(st7 == st9); // false
+
+        System.out.println(st7 == st10); // true
+
+        System.out.println(st11.equals(st12)); // true
+        System.out.println(st11 == st12); // true
+
+/*      int a,b;
+        int c = 0;
+        a=c+1;
+        b=b+1;*/
+     }
+
 }
