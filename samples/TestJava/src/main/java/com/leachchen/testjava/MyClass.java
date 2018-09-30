@@ -1,14 +1,16 @@
 package com.leachchen.testjava;
 
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
 
 /**
- * 1.静态方法重写是无效的，调用的还是父类的方法，成员变量重写也是无效的，调用的还是父类的成员变量值,非私有成员方法可发生重写
+ * 1.静态方法重写是无效的，调用的还是父类的方法，成员变量重写也是无效的，调用的还是父类的成员变量值,非私有成员方法可发生重写,不带修饰符的方法可以重写
  * 2.成员变量默认为default(friendly)类型，允许同一个包内的类访问
  * 3.抽象类无法被实例化
  * 4.匿名内部类new B（）{}
  * 5.接口--》
  *      接口里面可以定义成员变量默认为静态常量类型；
+ *
  *      接口默认也是抽象的，也不能被实例化；
  *      接口里面的方法不能有方法体，默认是public abstract，也只能是这个类型；
  *      接口只能继承接口，不能实现（implements）；
@@ -21,6 +23,15 @@ package com.leachchen.testjava;
  * 12.JAVA初始化顺序，父类静态成员初始化--》父类静态代码块--》子类静态成员初始化--》子类静态代码块--》父类代码块--》父类的构造方法--》子类的代码块--》子类的构造方法
  * 13.一个类文件里面，public 的外部类只能有一个，不带标记的类可以有多个
  * 14.finally中有return会覆盖try catch中的return的值，没有的话则用try，catch中return的值。执行顺序是先执行try里面代码再执行catch再执行finally,但是finally中的代码优先于try catch中的return语句执行
+ * 15.静态static不能修饰局部变量
+ * 16.方法重写时(extend,implements)，子类方法修饰符范围不能比父类小，否则会报错
+ * 17.打印对象时，重写了toString方法，则调用的toString方法
+ * 18.单例的构造函数可以是私有的，这样可以防止外部new这个类
+ * 19.重载，方法名相同，参数类型或个数必须不同，返回类型及修饰符可相同可不相同
+ * 20.父类子类命名相同的方法，要么都为静态，要么都不是静态，为静态是隐藏，非静态是重写
+ * 21.定义局部变量必须赋值初始化
+ * 22.标识符用来给变量，类，方法名等命名，标识符只能是字母数字下划线及$符号，不能以数字开头，不能为关键字，区分大小写
+ * 23.匿名类直接在方法中new
  */
 
 public class MyClass {
@@ -46,19 +57,24 @@ public class MyClass {
     public static void main(String []args)
     {
 
-        change(str,a,2);
+/*        change(str,a,2);
         System.out.println(str);
         System.out.println(a);
-        System.out.println(bb);
+        System.out.println(bb);*/
 
-        /*TestPart testPart = new TestPart();
-        String path = "D:\\Test\\source.txt";
-        String destPath = "D:\\Test\\dest.txt";
-        System.out.println("aaaaaa:"+testPart.testPart1());*/
 
-        //TestClassChild testClassParent = new TestClassChild();
+       TestPart testPart = new TestPart();
+/*        try {
+            testPart.testPart12();
+        }catch (Exception e)
+        {
+            System.out.println("ccccccccc");
+        }*/
+        testPart.testPart13();
 
-        //System.out.println(testClassParent.name);
+/*      TestClassParent testClassParent = new TestClassChild();
+
+        testClassParent.run();*/
 
 
         //TestClassChild testClassChild = new TestClassChild();
@@ -72,6 +88,53 @@ public class MyClass {
 
         //String[]s = new String[10];
         //System.out.println(""+(1==1));
+
+        //Demo demo = new Demo(1);
+        //System.out.println(demo);
+
+        //new B();
+    }
+
+    static class Demo
+    {
+        private int data;
+        public Demo(int data)
+        {
+            this.data = data;
+        }
+
+        public String toString()
+        {
+            return "data="+data;
+        }
+    }
+
+    static class A
+    {
+        public A()
+        {
+            System.out.println("A");
+        }
+
+        public A(String s)
+        {
+            System.out.println("A-"+s);
+        }
+    }
+
+
+    static class B extends A
+    {
+        public B()
+        {
+            this("B");
+        }
+
+        public B(String s)
+        {
+            super(s);
+            System.out.println(s);
+        }
     }
 
 }

@@ -26,7 +26,7 @@ public class TestClassParent{
         System.out.println("father consult");
     }
 
-    void run()
+    public void run()
     {
         System.out.println("TestClassParent run:"+name);
         final int b = 1;

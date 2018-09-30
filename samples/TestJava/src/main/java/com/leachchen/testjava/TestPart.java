@@ -286,6 +286,14 @@ public class TestPart{
         {
             System.out.print(i);
         }
+        System.out.println();
+        for(int i = 0; i < 10;i++)
+        {
+            System.out.print(i);
+        }
+        System.out.println();
+        int x = 1;
+        System.out.println("aa:"+(++x));
     }
 
     public void testPart11()
@@ -295,4 +303,37 @@ public class TestPart{
         System.out.println(simpleDateFormat.format(date));
 
     }
+
+    public void testPart12()
+    {
+        try
+        {
+            System.out.println("aaaaaaaaaa");
+            throw new RuntimeException();
+        }finally {
+            System.out.println("bbbbbbbbb");
+        }
+
+    }
+
+    public void testPart13()
+    {
+
+        int a = 1;
+        float b = 2;
+        //int c = a / b;
+        System.out.println(""+a/b);
+
+        int n = 9;
+        byte m = 127;
+        int x = n + m;
+
+        System.out.println("x:"+x);
+
+        int k = n++;
+
+        int y = --a;
+        System.out.println("k:"+k+" y:"+y);
+    }
+
 }

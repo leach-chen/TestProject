@@ -31,7 +31,10 @@ public class TestClassChild extends TestClassParent  implements TestInterface {
         System.out.println("TestClassChild run aaaaaaaaaa");
     }
 
-    void run()
+    /**
+     * 方法重写时，子类方法修饰符范围不能比父类小，否则会报错
+     */
+   public void run()
     {
         System.out.println("TestClassChild run:"+name);
     }

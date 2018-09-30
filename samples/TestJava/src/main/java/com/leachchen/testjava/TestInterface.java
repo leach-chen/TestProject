@@ -7,8 +7,8 @@ package com.leachchen.testjava;
  * Date:        2018/9/18 14:17
  **/
 public interface TestInterface extends A,B{
-     String aa ="aa";  //默认为静态常量类型
-     void test();
+     String name ="aa";  //默认为静态常量类型 public static final
+     void test();   //默认是public abstract
 }
 interface A
 {
