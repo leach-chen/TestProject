@@ -375,4 +375,19 @@ public class TestPart{
         b=b+1;*/
      }
 
+    public static void testPart15(StringBuffer a,StringBuffer b)
+    {
+        //传递对象时，局部变量只是在栈中指向对象的一个引用
+
+        a.append(b);
+        b = a;
+
+        /*StringBuffer str1 = new StringBuffer("aa");
+        StringBuffer str2 =  new StringBuffer("bb");;
+
+        TestPart testPart = new TestPart();
+        testPart.testPart15();
+        System.out.println(str1+" "+str2);*/
+    }
+
 }

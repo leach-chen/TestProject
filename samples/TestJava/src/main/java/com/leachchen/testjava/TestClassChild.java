@@ -52,4 +52,14 @@ public class TestClassChild extends TestClassParent implements TestInterface {
     public void test() {
 
     }
+
+    static class AAA
+    {
+        //可以new，不占外部类引用
+    }
+
+    public class  BBB
+    {
+        //不能直接new，占外部类引用
+    }
 }

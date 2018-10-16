@@ -28,7 +28,7 @@ package com.leachchen.testjava;
  * 19.重载，方法名相同，参数类型或个数必须不同，返回类型及修饰符可相同可不相同
  * 20.父类子类命名相同的方法，要么都为静态，要么都不是静态，为静态是隐藏，非静态是重写
  * 21.定义局部变量必须赋值初始化
- * 22.标识符用来给变量，类，方法名等命名，标识符只能是字母数字下划线及$符号，不能以数字开头，不能为关键字，区分大小写
+ * 22.标识符用来给变量，类，方法名等命名，标识符只能是字母数字下划线及$符号，不能以数字开头，不能为关键字，区分大小写（命名规则）
  * 23.匿名类直接在方法中new
  * 24.对于字符串，对象的引用str存储在栈中，直接引号定义的存储在常量池中，运行时new出来的(new String("aa"))，存储在堆上，对于equals相等的字符串，常量区只有一份，堆中有多份,String str = new String("aa");
  *    成员变量存储在堆的对象里，局部变量存储在栈中
@@ -39,11 +39,22 @@ package com.leachchen.testjava;
  * 28.类方法为非private时，都可以被类对象调用，如果是内部类的方法，只有public方法可以调用
  * 29.继承具有传递性，子类可以向最上层转型
  * 30.构造函数不能被继承，只能显示或者隐式的调用
+ * 31.接口声明（用的时候）用implements，定义用interface,java 1.8以后在接口定义里面允许有方法实现
+ * 32.编译器将java源代码编译成字节码class文件，然后由JVM进行加载，执行引擎把字节码转换为可执行代码，再把可执行代码转为机器码，由底层的操作系统完成执行
+ * 33.JVM主要分三个区，堆、栈、方法区，堆存放对象，线程共享的，栈存放基本类型数据和对象的引用，是线程私有的，方法区存放类信息、常量、静态变量、编译的字节码，是线程共享的，垃圾回收主要针对堆区
+ *    JAVA 虚拟机对应方法的调用是采用栈帧，调用入栈，完成后出栈，出栈就回收了资源，而不是由GC来释放
+ * 34.内部类的访问属性有多种，可以理解为类的方法
+ * 35.Stack 栈先进后出，队列queue，先进先出
+ * 36.类是单继承，但是接口可以多继承
+ * 37.同一类或者父子类中不允许除了返回类型不一样，其它都一样的方法定义
+ * 38.外部类只能为public，abstract，final，default，内部类可以为任何修饰符，内部类为静态时，就不需要外部类的应用了
+ * 39.static不能应用于局部变量，只占用一份存储区域，类的静态成员会随类的加载而加载
  */
 
 public class MyClass {
 
     static String str = "abc";  //abc在常量区
+    static String str1 = "aaa";  //abc在常量区
     static char[]a = {'a','b','c'};
     static int bb = 2;
 
@@ -60,9 +71,16 @@ public class MyClass {
         bb = 10;    //新建过一个变量在栈中，传值时默认是2，重新赋值为10
     }
 
+
+
     public static void main(String []args)
     {
+        StringBuffer str1 = new StringBuffer("aa");
+        StringBuffer str2 =  new StringBuffer("bb");;
 
+        TestPart testPart = new TestPart();
+        testPart.testPart15(str1,str2);
+        System.out.println(str1+" "+str2);
 
 /*      change(str,a,2);
         System.out.println(str);
@@ -70,18 +88,17 @@ public class MyClass {
         System.out.println(bb);*/
 
 
-       TestPart testPart = new TestPart();
 /*        try {
             testPart.testPart12();
         }catch (Exception e)
         {
             System.out.println("ccccccccc");
         }*/
-        testPart.testPart14();
+ /*       testPart.testPart14();
 
       TestClassParent testClassParent = new TestClassParent();
 
-        testClassParent.run();
+        testClassParent.run();*/
 
 
         //TestClassChild testClassChild = new TestClassChild();
@@ -158,5 +175,4 @@ public class MyClass {
             System.out.println(s);
         }
     }
-
 }
