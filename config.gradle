@@ -1,3 +1,4 @@
+/*
 ext {
     plugins = [
             library    : 'com.android.library',
@@ -55,4 +56,4 @@ ext {
             loading          : 'com.yanzhenjie:loading:1.0.2',
             swipeRecyclerView: 'com.yanzhenjie:recyclerview-swipe:1.1.4'
     ]
-}
+}*/

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisProjectProfileManager">
-    <option name="PROJECT_PROFILE" value="unnamed" />
+    <option name="PROJECT_PROFILE" value="Project Default" />
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
     <scopes />
     <profiles>
-      <profile profile_name="unnamed" version="1.0" is_locked="false">
+      <profile profile_name="Project Default" version="1.0" is_locked="false">
         <coding_rule class="BestPracticesAbstractClassWithoutAbstractMethod" level="MAJOR" enabled="false" />
         <coding_rule class="BestPracticesAccessorClassGeneration" level="MAJOR" enabled="false" />
         <coding_rule class="BestPracticesAccessorMethodGeneration" level="MAJOR" enabled="false" />

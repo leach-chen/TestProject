@@ -1,3 +1,4 @@
+/*
 apply plugin: rootProject.ext.plugins.library
 
 android {
@@ -18,4 +19,4 @@ dependencies {
     implementation rootProject.ext.dependencies.loading
 }
 
-apply from: "https://raw.githubusercontent.com/yanzhenjie/bintray/master/maven.gradle"
+apply from: "https://raw.githubusercontent.com/yanzhenjie/bintray/master/maven.gradle"*/
