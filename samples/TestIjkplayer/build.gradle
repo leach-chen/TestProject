@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.leachchen.testijkplayer"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -47,4 +47,6 @@ dependencies {
 //    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
 
     implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+
+    implementation "com.didichuxing.doraemonkit:doraemonkit:1.1.2"
 }
