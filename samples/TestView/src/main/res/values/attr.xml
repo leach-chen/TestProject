@@ -13,4 +13,12 @@
             <enum name="FILL" value="1"></enum>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="Battery">
+        <attr name="batteryColor" format="color"/>
+        <attr name="batteryProcess" format="Integer"/>
+    </declare-styleable>
+
+
+
 </resources>

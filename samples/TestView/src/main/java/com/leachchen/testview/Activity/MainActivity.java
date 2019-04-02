@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rv_testview = (RecyclerView)this.findViewById(R.id.rv_testview);
 
+        mClassList.add(BatteryActivity.class);mStringList.add("绘制电池");
         mClassList.add(CircularDragActivity.class);mStringList.add("渐变可拖动圆环");
         mClassList.add(ArrowTextViewActivity.class);mStringList.add("箭头文本");
         mClassList.add(ClockViewActivity.class);mStringList.add("绘制时钟");
