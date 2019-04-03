@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".Activity.BatteryActivity">
         </activity>
+        <activity android:name=".Activity.VavaActivity">
+        </activity>
     </application>
 
 </manifest>
