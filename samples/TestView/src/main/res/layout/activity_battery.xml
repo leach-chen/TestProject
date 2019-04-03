@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity.BatteryActivity">
 
     <LinearLayout
@@ -12,13 +13,45 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-    <com.leachchen.testview.View.BatteryView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/dp_30"
-        android:layout_marginTop="@dimen/dp_30"
-        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="process0"
+            android:text="0"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="process50"
+            android:text="50"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="process80"
+            android:text="80"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="process100"
+            android:text="100"
+            />
 
     </LinearLayout>
+
+
+
+
+    <com.leachchen.testview.View.BatteryView
+        android:id="@+id/batteryview"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_20"
+        android:layout_margin="@dimen/dp_10"
+        />
 
 </LinearLayout>
