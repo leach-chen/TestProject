@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rv_testview = (RecyclerView)this.findViewById(R.id.rv_testview);
 
-        mClassList.add(PlayAnimationActivity.class);mStringList.add("带动画的播放控件");
         mClassList.add(VavaActivity.class);mStringList.add("绘制vava");
+        mClassList.add(PlayAnimationActivity.class);mStringList.add("带动画的播放控件");
         mClassList.add(BatteryActivity.class);mStringList.add("绘制电池");
         mClassList.add(CircularDragActivity.class);mStringList.add("渐变可拖动圆环");
         mClassList.add(ArrowTextViewActivity.class);mStringList.add("箭头文本");
