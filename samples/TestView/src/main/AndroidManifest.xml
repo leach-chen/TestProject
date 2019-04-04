@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".Activity.VavaActivity">
         </activity>
+        <activity android:name=".Activity.PlayAnimationActivity">
+        </activity>
     </application>
 
 </manifest>
