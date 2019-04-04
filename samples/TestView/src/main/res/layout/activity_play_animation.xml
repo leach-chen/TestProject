@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".Activity.PlayAnimationActivity">
 
-    <com.leachchen.testview.View.PlayAnimationView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <com.leachchen.commongroup.Utils.Views.PlayAnimationView
+        android:layout_width="80dp"
+        android:layout_height="36dp"
         android:background="@color/color_000000"
         />
 

@@ -9,7 +9,6 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -108,6 +107,10 @@ public class PlayAnimationView extends View {
 
         mCenterX = mWidth / 2.0f;
         mCenterY = mHeight / 2.0f;
+
+        mRadius = mHeight / 2;
+        mDistance = mWidth / 2 - mRadius;
+
     }
 
     @Override
