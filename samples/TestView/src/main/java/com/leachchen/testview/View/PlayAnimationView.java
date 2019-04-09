@@ -83,7 +83,7 @@ public class PlayAnimationView extends View {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setColor(Color.parseColor("#ffffff"));
         mPaint.setAntiAlias(true);
-        mPaint.setStrokeWidth(2);
+        mPaint.setStrokeWidth(DisplayUtil.dip2px(mContext,2));
 
         mPaintTriangle.setStyle(Paint.Style.FILL);
         mPaintTriangle.setColor(Color.parseColor("#ffffff"));
@@ -103,6 +103,13 @@ public class PlayAnimationView extends View {
         mValueAnimatorMove.start();
     }
 
+    public void startPlayAnima(){
+        mPercent = 0;
+        if (mValueAnimatorMove != null && !mValueAnimatorMove.isStarted()){
+            mValueAnimatorMove.start();
+        }
+    }
+
     @Override
     protected  void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
@@ -117,6 +124,8 @@ public class PlayAnimationView extends View {
         mRadius = mHeight / 2;
         mDistance = mWidth / 2 - mRadius;
 
+        mTriangleWidth = DisplayUtil.dip2px(mContext,15);
+        mTriangleHeight = DisplayUtil.dip2px(mContext,15);
     }
 
     @Override
@@ -163,8 +172,7 @@ public class PlayAnimationView extends View {
         mPath7.lineTo(mCenterX - mTriangleWidth/2 - mTriangleWidth,mCenterY + mTriangleHeight / 2);
         mPath7.close();
 
-        Log.e("mytest",""+DisplayUtil.sp2px(getContext(),30));
-        mPaintTriangle.setTextSize(DisplayUtil.sp2px(getContext(),30));
+        mPaintTriangle.setTextSize(DisplayUtil.sp2px(getContext(),18));
         Paint.FontMetricsInt fontMetrics = mPaintTriangle.getFontMetricsInt();
         int textHeight = fontMetrics.bottom-fontMetrics.top;//详细:(baseY＋bottom)-(baseY-top);
         canvas.drawText("Live",mCenterX,mCenterY+textHeight/4,mPaintTriangle);
