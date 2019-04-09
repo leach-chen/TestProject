@@ -9,8 +9,11 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+
+import com.leachchen.testview.utils.DisplayUtil;
 
 /**
  * ClassName:   PlayAnimationView.java
@@ -46,6 +49,8 @@ public class PlayAnimationView extends View {
 
     private ValueAnimator mValueAnimatorMove;//移动变化动画
 
+    private Context mContext;
+
 
     public PlayAnimationView(Context context) {
         super(context);
@@ -64,6 +69,7 @@ public class PlayAnimationView extends View {
 
     private void init(Context context)
     {
+        mContext = context;
         mPaint = new Paint();
         mPaintTriangle = new Paint();
         mPath1 = new Path();
@@ -157,7 +163,8 @@ public class PlayAnimationView extends View {
         mPath7.lineTo(mCenterX - mTriangleWidth/2 - mTriangleWidth,mCenterY + mTriangleHeight / 2);
         mPath7.close();
 
-        mPaintTriangle.setTextSize(30);
+        Log.e("mytest",""+DisplayUtil.sp2px(getContext(),30));
+        mPaintTriangle.setTextSize(DisplayUtil.sp2px(getContext(),30));
         Paint.FontMetricsInt fontMetrics = mPaintTriangle.getFontMetricsInt();
         int textHeight = fontMetrics.bottom-fontMetrics.top;//详细:(baseY＋bottom)-(baseY-top);
         canvas.drawText("Live",mCenterX,mCenterY+textHeight/4,mPaintTriangle);
