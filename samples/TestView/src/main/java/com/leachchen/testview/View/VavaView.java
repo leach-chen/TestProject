@@ -117,14 +117,14 @@ public class VavaView extends View {
     {
 
         mContext = context;
-        mVavaWidth = DensityUtils.dip2px(mContext,14);
+        mVavaWidth = DensityUtils.dip2px(mContext,16);
 
         mStartXPoint1 = 0;
         mStartYPoint1 = 0;
         mEndXPoint1 = mVavaWidth;
         mEndYPoint1 = 0;
         mConXPoint1 = (mVavaWidth /2);
-        mConYPoint1 = (int)(mVavaWidth * 2.5);
+        mConYPoint1 = (int)(mVavaWidth * 2);
 
         float t = 0.5f;
         float temp = 1 - t;
@@ -136,7 +136,7 @@ public class VavaView extends View {
         mEndXPoint2 = mVavaWidth * 2;
         mEndYPoint2 = mVavaHeight;
         mConXPoint2 = mVavaWidth + (mVavaWidth /2);
-        mConYPoint2 = mVavaHeight - (int)(mVavaWidth * 2.5);
+        mConYPoint2 = mVavaHeight - (int)(mVavaWidth * 2);
 
 
         mStartXPoint3 = mVavaWidth*2;
@@ -144,14 +144,14 @@ public class VavaView extends View {
         mEndXPoint3 = mVavaWidth * 3;
         mEndYPoint3 = 0;
         mConXPoint3 = mVavaWidth*2 + (mVavaWidth /2);
-        mConYPoint3 = (int)(mVavaWidth * 2.5);
+        mConYPoint3 = (int)(mVavaWidth * 2);
 
         mStartXPoint4 = mVavaWidth*3;
         mStartYPoint4 = mVavaHeight;
         mEndXPoint4 = mVavaWidth * 4;
         mEndYPoint4 = mVavaHeight;
         mConXPoint4 = mVavaWidth*3 + (mVavaWidth /2);
-        mConYPoint4 = mVavaHeight - (int)(mVavaWidth * 2.5);
+        mConYPoint4 = mVavaHeight - (int)(mVavaWidth * 2);
 
 
         this.mContext = context;
@@ -196,6 +196,7 @@ public class VavaView extends View {
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        //测量路径长度
         mPath1.moveTo(mStartXPoint1, mStartYPoint1);
         mPath1.quadTo(mConXPoint1, mConYPoint1, mEndXPoint1, mEndYPoint1);
         mPathMeasure1 = new PathMeasure();
@@ -226,13 +227,13 @@ public class VavaView extends View {
     {
         super.onDraw(canvas);
 
-        //贝塞尔曲线1
+        //贝塞尔曲线1，绘制第一段底部曲线
         mPath1.reset();
         mPath1.moveTo(mStartXPoint1, mStartYPoint1);
         mPath1.quadTo(mConXPoint1, mConYPoint1, mEndXPoint1, mEndYPoint1);
         canvas.drawPath(mPath1, mPaint);
 
-        if(mPathPercent>=0 && mPathPercent <= 0.25) {
+        if(mPathPercent>=0 && mPathPercent <= 0.25) {   //动态绘制第一段变化曲线
             mPathMove1.reset();
             //mPathMove1.lineTo(0, 0);
             float stop1 = mPathLength1 * mPathPercent*4;
