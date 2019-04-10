@@ -24,6 +24,21 @@ public class VavaActivity extends AppCompatActivity {
         vava_view.startAnimation();
     }
 
+    public void go0(View view)
+    {
+        vava_view.setProcess(0);
+    }
+
+    public void go50(View view)
+    {
+        vava_view.setProcess(50);
+    }
+
+    public void go100(View view)
+    {
+        vava_view.setProcess(100);
+    }
+
     public void stop(View view)
     {
         vava_view.stopAnimation();

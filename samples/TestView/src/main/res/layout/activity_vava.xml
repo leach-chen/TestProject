@@ -8,25 +8,59 @@
     android:orientation="vertical"
     tools:context=".Activity.VavaActivity">
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="start"
-        android:onClick="start"
-        />
+        android:orientation="horizontal"
+        >
 
-    <Button
-        android:layout_width="wrap_content"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="start"
+            android:text="start"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stop"
+            android:text="stop"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="stop"
-        android:onClick="stop"
-        />
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="go0"
+            android:text="0"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="go50"
+            android:text="50"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="go100"
+            android:text="100"
+            />
+    </LinearLayout>
+
     <com.leachchen.testview.View.VavaView
         android:id="@+id/vava_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@color/color_000000"
         />
 
