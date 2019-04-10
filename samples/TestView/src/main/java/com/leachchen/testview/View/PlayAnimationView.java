@@ -1,4 +1,4 @@
-package com.leachchen.testview.View;
+package  com.leachchen.testview.View;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -9,11 +9,11 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
 import com.leachchen.testview.utils.DisplayUtil;
+
 
 /**
  * ClassName:   PlayAnimationView.java
@@ -121,8 +121,8 @@ public class PlayAnimationView extends View {
         mCenterX = mWidth / 2.0f;
         mCenterY = mHeight / 2.0f;
 
-        mRadius = mHeight / 2;
-        mDistance = mWidth / 2 - mRadius;
+        mRadius = mHeight / 2 - DisplayUtil.dip2px(mContext,2);
+        mDistance = mWidth / 2 - mRadius - DisplayUtil.dip2px(mContext,2);
 
         mTriangleWidth = DisplayUtil.dip2px(mContext,15);
         mTriangleHeight = DisplayUtil.dip2px(mContext,15);
