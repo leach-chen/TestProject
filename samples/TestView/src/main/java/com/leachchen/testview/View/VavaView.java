@@ -117,12 +117,13 @@ public class VavaView extends View {
     {
 
         mContext = context;
-        mVavaWidth = DensityUtils.dip2px(mContext,16);
+        int topleftHeight = DensityUtils.dip2px(mContext,2);
+        mVavaWidth = DensityUtils.dip2px(mContext,16) + topleftHeight;
 
-        mStartXPoint1 = 0;
-        mStartYPoint1 = 0;
+        mStartXPoint1 = topleftHeight;
+        mStartYPoint1 = topleftHeight;
         mEndXPoint1 = mVavaWidth;
-        mEndYPoint1 = 0;
+        mEndYPoint1 = topleftHeight;
         mConXPoint1 = (mVavaWidth /2);
         mConYPoint1 = (int)(mVavaWidth * 2);
 
@@ -140,9 +141,9 @@ public class VavaView extends View {
 
 
         mStartXPoint3 = mVavaWidth*2;
-        mStartYPoint3 = 0;
+        mStartYPoint3 = topleftHeight;
         mEndXPoint3 = mVavaWidth * 3;
-        mEndYPoint3 = 0;
+        mEndYPoint3 = topleftHeight;
         mConXPoint3 = mVavaWidth*2 + (mVavaWidth /2);
         mConYPoint3 = (int)(mVavaWidth * 2);
 
