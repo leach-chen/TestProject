@@ -100,7 +100,7 @@ public class BatteryView extends View {
         mPaint.setStrokeWidth(boundWidth);
         mPaint.setAntiAlias(true);
 
-        if(mRedValue == 0)
+        if(mProcess <= mRedValue)
         {
             mPaint.setColor(mColorNoPower);
         }
