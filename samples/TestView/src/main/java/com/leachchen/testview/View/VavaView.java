@@ -17,6 +17,7 @@ import android.view.animation.DecelerateInterpolator;
 import com.leachchen.testview.utils.DensityUtils;
 
 
+
 /**
  * ClassName:   VavaView.java
  * Description:
@@ -185,17 +186,7 @@ public class VavaView extends View {
 
 
 
-        mValueAnimator= ValueAnimator.ofFloat(0, 1);
-        mValueAnimator.setInterpolator(new DecelerateInterpolator());
-        mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
-        mValueAnimator.setDuration(mAnimationDuration);
-        mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                mPathPercent = (float) animation.getAnimatedValue();
-                invalidate();
-            }
-        });
+
     }
 
     @Override
@@ -352,8 +343,17 @@ public class VavaView extends View {
             }
         });
         valueAnimator.start();*/
+        mValueAnimator= ValueAnimator.ofFloat(0, 1);
+        mValueAnimator.setInterpolator(new DecelerateInterpolator());
         mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         mValueAnimator.setDuration(mAnimationDuration);
+        mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                mPathPercent = (float) animation.getAnimatedValue();
+                invalidate();
+            }
+        });
         mValueAnimator.start();
     }
 
