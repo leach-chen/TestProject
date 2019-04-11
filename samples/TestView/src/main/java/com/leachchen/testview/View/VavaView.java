@@ -1,6 +1,5 @@
 package com.leachchen.testview.View;
 
-import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -10,16 +9,13 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.graphics.Point;
-import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
-import android.view.animation.LinearInterpolator;
 
 import com.leachchen.testview.utils.DensityUtils;
+
 
 /**
  * ClassName:   VavaView.java
@@ -97,6 +93,10 @@ public class VavaView extends View {
     private PathMeasure mPathMeasure1,mPathMeasure2,mPathMeasure3,mPathMeasure4;
     private float mPathLength1,mPathLength2,mPathLength3,mPathLength4;
     private float mPathPercent;
+
+    private ValueAnimator mValueAnimator;
+
+    private int mAnimationDuration = 2000;
 
     public VavaView(Context context) {
         super(context);
@@ -183,6 +183,19 @@ public class VavaView extends View {
         mPaintMove.setAntiAlias(true);
         mPaintMove.setStrokeWidth(mPaintWidth);
 
+
+
+        mValueAnimator= ValueAnimator.ofFloat(0, 1);
+        mValueAnimator.setInterpolator(new DecelerateInterpolator());
+        mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        mValueAnimator.setDuration(mAnimationDuration);
+        mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                mPathPercent = (float) animation.getAnimatedValue();
+                invalidate();
+            }
+        });
     }
 
     @Override
@@ -323,7 +336,6 @@ public class VavaView extends View {
         }
     }
 
-    ValueAnimator valueAnimator;
     public void startAnimation()
     {
         /*valueAnimator = ValueAnimator.ofObject(new CirclePointEvaluator(), new Point(mStartXPoint, mStartYPoint),new Point(mEndXPoint, mEndYPoint));
@@ -340,25 +352,22 @@ public class VavaView extends View {
             }
         });
         valueAnimator.start();*/
+        mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        mValueAnimator.setDuration(mAnimationDuration);
+        mValueAnimator.start();
+    }
 
-
-        valueAnimator= ValueAnimator.ofFloat(0, 1);
-        valueAnimator.setInterpolator(new DecelerateInterpolator());
-        valueAnimator.setRepeatCount(ValueAnimator.INFINITE);
-        valueAnimator.setDuration(2000);
-        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                mPathPercent = (float) animation.getAnimatedValue();
-                invalidate();
-            }
-        });
-        valueAnimator.start();
+    public void setAnimationDuration(int duration)
+    {
+        mAnimationDuration = duration;
     }
 
     public void stopAnimation()
     {
-        valueAnimator.cancel();
+        if(mValueAnimator != null) {
+            mValueAnimator.setRepeatCount(0);
+            mValueAnimator.cancel();
+        }
     }
 
     /**

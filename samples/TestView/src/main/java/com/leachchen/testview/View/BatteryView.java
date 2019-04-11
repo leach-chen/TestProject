@@ -44,6 +44,8 @@ public class BatteryView extends View {
     float boundWidth;
     float paddwdith;
 
+    private int mRedValue;
+
     public BatteryView(Context context) {
         super(context);
         init(context);
@@ -98,7 +100,7 @@ public class BatteryView extends View {
         mPaint.setStrokeWidth(boundWidth);
         mPaint.setAntiAlias(true);
 
-        if(mProcess == 0)
+        if(mRedValue == 0)
         {
             mPaint.setColor(mColorNoPower);
         }
@@ -129,7 +131,7 @@ public class BatteryView extends View {
 
         RectF rectF = new RectF(1.5f*paddwdith,1.5f*paddwdith,width*(mProcess/100.0f),height);
         float[] radii = {0.7f*DEFAULT_RADIUS, 0.7f*DEFAULT_RADIUS, 0, 0, 0, 0, 0.7f*DEFAULT_RADIUS, 0.7f*DEFAULT_RADIUS};
-        mInnerPath.addRoundRect(rectF,radii,Path.Direction.CCW);
+        mInnerPath.addRoundRect(rectF,radii, Path.Direction.CCW);
         canvas.drawPath(mInnerPath, mInnerPaint); //绘制内部电池
     }
 
@@ -207,10 +209,23 @@ public class BatteryView extends View {
     }
 
 
+    /**
+     * 更新电池进度
+     * @param process
+     */
     public void updateProcess(int process)
     {
         this.mProcess = process;
         postInvalidate();
+    }
+
+    /**
+     * 设置电池变红的值0~100
+     * @param value
+     */
+    public void setRedValue(int value)
+    {
+        this.mRedValue = value;
     }
 
 }
