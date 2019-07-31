@@ -1,3 +1,3 @@
-include ':samples:TestView', ':samples:TestJni', ':samples:TestFFmpeg', ':samples:TestGpsMap', ':samples:TestGps', ':samples:TestIjkplayer', ':samples:TestMaterialDesign', ':lib', ':samples:TestJava',
+include ':samples:TestView', ':samples:TestJni', ':samples:TestFFmpeg', ':samples:TestGpsMap', ':samples:TestGps', ':samples:TestIjkplayer', ':samples:TestMaterialDesign', ':lib', ':samples:TestJava', ':samples:TestRxJava',
         ':samples:TestAnimation', ':samples:TestDemoActivity', ':samples:TestEventPass', ':samples:TestSystemAlbum', ':samples:TestEditor',
         ':libs:markdown', ':samples:TestRecycleView', ':libs:recyclerview-swipe', ':libs:commonBase', ':samples:TestUIAutomator', ':samples:TestAccessibilityService', ':samples:TestPart'
