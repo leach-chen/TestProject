@@ -1,4 +1,4 @@
-package com.leachchen.testjava;
+package com.leachchen.testjava.Other;
 
 /**
  * ClassName:   TestInterface.java

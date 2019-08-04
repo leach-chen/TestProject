@@ -1,4 +1,4 @@
-package com.leachchen.testjava;
+package com.leachchen.testjava.Other;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.leachchen.testjava;
+package com.leachchen.testjava.Other;
 
 
 /**
@@ -76,10 +76,10 @@ public class MyClass {
     public static void main(String []args)
     {
         StringBuffer str1 = new StringBuffer("aa");
-        StringBuffer str2 =  new StringBuffer("bb");;
+        StringBuffer str2 =  new StringBuffer("bb");
 
         TestPart testPart = new TestPart();
-        testPart.testPart15(str1,str2);
+        TestPart.testPart15(str1,str2);
         System.out.println(str1+" "+str2);
 
 /*      change(str,a,2);
