@@ -43,6 +43,25 @@ public class MaoPao {
             }
         }*/
 
+        /*for(int i =0;i<data.length;i++)
+        {
+            //下沉方式，降序
+            for(int j =0;j < data.length - i - 1;j++)
+            {
+                if(data[j] < data[j+1])
+                {
+                    temp = data[j];
+                    data[j] = data[j+1];
+                    data[j+1] = temp;
+                    isRun = true;
+                }
+            }
+            if(!isRun)
+            {
+                break;
+            }
+        }*/
+
         for(int i = 0; i<data.length;i++)
         {
             //上浮方式,升序
@@ -62,25 +81,6 @@ public class MaoPao {
                 break;
             }
         }
-
-        /*for(int i =0;i<data.length;i++)
-        {
-            //下沉方式，降序
-            for(int j =0;j < data.length - i - 1;j++)
-            {
-                if(data[j] < data[j+1])
-                {
-                    temp = data[j];
-                    data[j] = data[j+1];
-                    data[j+1] = temp;
-                    isRun = true;
-                }
-            }
-            if(!isRun)
-            {
-                break;
-            }
-        }*/
 
         /*for(int i = 0; i <data.length;i++)
         {
