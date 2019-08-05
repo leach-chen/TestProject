@@ -25,17 +25,18 @@ public class ChaRu {
         for (int i = 0;i < data.length;i++)
         {
             temp = data[i]; //待插入数据
-            for (int j = i - 1; j>=0;j--)
+            int j;
+            for (j = i - 1; j>=0;j--)
             {
                 if(data[j] < temp)
                 {
                     data[j+1] = data[j];
                 }else
                 {
-                    data[j] = temp;
                     break;
                 }
             }
+            data[j+1] = temp;
         }
 
         for(int i=0;i<data.length;i++)
