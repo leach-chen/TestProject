@@ -8,13 +8,11 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
 
-    public String TAG = "AA";
+    private static String TAG = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +50,5 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "======================onComplete");
             }
         });
-
     }
 }
