@@ -78,3 +78,23 @@ public class MyViewGroup extends FrameLayout {
         return super.onTouchEvent(ev);//默认也是FALSE
     }
 }
+
+
+/*override fun onTouchEvent(ev: MotionEvent): Boolean {
+    when (ev.action) {
+    MotionEvent.ACTION_DOWN -> Log.d(
+    "mytest",
+    "MainActivity onTouchEvent Custom: ACTION_DOWN"
+    )
+    MotionEvent.ACTION_MOVE -> Log.d(
+    "mytest",
+    "MainActivity onTouchEvent Custom: ACTION_MOVE"
+    )
+    MotionEvent.ACTION_UP -> Log.d("mytest", "MainActivity onTouchEvent Custom: ACTION_UP")
+    MotionEvent.ACTION_CANCEL -> Log.d(
+    "mytest",
+    "MainActivity onTouchEvent Custom: ACTION_CANCEL"
+    )
+    }
+    return super.onTouchEvent(ev) //默认也是FALSE
+    }*/
