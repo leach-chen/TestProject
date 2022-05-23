@@ -3,8 +3,11 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1" />
+        <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -24,7 +27,6 @@
             <option value="$PROJECT_DIR$/samples/TestGpsMap" />
             <option value="$PROJECT_DIR$/samples/TestIjkplayer" />
             <option value="$PROJECT_DIR$/samples/TestJava" />
-            <option value="$PROJECT_DIR$/samples/TestJni" />
             <option value="$PROJECT_DIR$/samples/TestMaterialDesign" />
             <option value="$PROJECT_DIR$/samples/TestPart" />
             <option value="$PROJECT_DIR$/samples/TestRecycleView" />
@@ -34,7 +36,6 @@
             <option value="$PROJECT_DIR$/samples/TestView" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
