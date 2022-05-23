@@ -1,4 +1,4 @@
-package com.leachchen.testview.View.Other;
+package com.leachchen.testview.View.Test;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -22,8 +22,7 @@ public class MyView extends View {
 
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent ev)
-    {
+    public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 Log.d("mytest", "MyView dispatchTouchEvent Custom: ACTION_DOWN");
@@ -42,8 +41,7 @@ public class MyView extends View {
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent ev)
-    {
+    public boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 Log.d("mytest", "MyView onTouchEvent Custom: ACTION_DOWN");
@@ -61,4 +59,20 @@ public class MyView extends View {
         }
         return true;//默认也是FALSE
     }
+
+
+    @Override
+    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        //setMeasuredDimension(100,100);
+        int specMode = MeasureSpec.getMode(widthMeasureSpec);
+        int specSize = MeasureSpec.getSize(heightMeasureSpec);
+
+        int result = specSize;
+        if (specMode == MeasureSpec.AT_MOST) {
+            result = 500;
+        }
+        setMeasuredDimension(result, result);
+    }
+
 }

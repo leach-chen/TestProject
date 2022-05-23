@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         mClassList.add(FavoriteActivity.class);mStringList.add("收藏图标");
         mClassList.add(RoundShadeActivity.class);mStringList.add("圆形阴影");
         mClassList.add(RoundImageActivity.class);mStringList.add("圆角图片");
+        mClassList.add(TestActivity.class);mStringList.add("Test");
 
         MyAdapter myAdapter = new MyAdapter();
 

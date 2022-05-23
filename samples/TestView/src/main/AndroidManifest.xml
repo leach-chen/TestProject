@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.leachchen.testview">
+    package="com.leachchen.testview">
 
     <application
         android:allowBackup="true"
@@ -10,31 +10,26 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.ClockViewActivity"/>
-        <activity android:name=".Activity.ArrowTextViewActivity"/>
-        <activity android:name=".Activity.ScrollBackActivity"/>
-        <activity android:name=".Activity.ScrollBackListActivity"/>
-        <activity android:name=".Activity.ScrollDelActivity">
-        </activity>
-        <activity android:name=".Activity.FavoriteActivity">
-        </activity>
-        <activity android:name=".Activity.RoundShadeActivity">
-        </activity>
-        <activity android:name=".Activity.RoundImageActivity">
-        </activity>
-        <activity android:name=".Activity.CircularDragActivity">
-        </activity>
-        <activity android:name=".Activity.BatteryActivity">
-        </activity>
-        <activity android:name=".Activity.VavaActivity">
-        </activity>
-        <activity android:name=".Activity.PlayAnimationActivity">
-        </activity>
+        <activity android:name=".Activity.ClockViewActivity" />
+        <activity android:name=".Activity.ArrowTextViewActivity" />
+        <activity android:name=".Activity.ScrollBackActivity" />
+        <activity android:name=".Activity.ScrollBackListActivity" />
+        <activity android:name=".Activity.ScrollDelActivity"></activity>
+        <activity android:name=".Activity.FavoriteActivity"></activity>
+        <activity android:name=".Activity.RoundShadeActivity"></activity>
+        <activity android:name=".Activity.RoundImageActivity"></activity>
+        <activity android:name=".Activity.CircularDragActivity"></activity>
+        <activity android:name=".Activity.BatteryActivity"></activity>
+        <activity android:name=".Activity.VavaActivity"></activity>
+        <activity android:name=".Activity.PlayAnimationActivity"></activity>
+        <activity
+            android:name=".Activity.TestActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
